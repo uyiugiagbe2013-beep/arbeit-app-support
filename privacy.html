@@ -6,7 +6,7 @@
   <title>Arbeit-App – Datenschutz</title>
   <meta
     name="description"
-    content="Datenschutzerklärung der Arbeit-App. Informationen zur Verarbeitung von Konto-, Arbeitszeit- und Supportdaten."
+    content="Datenschutzerklärung der Arbeit-App. Informationen zur Verarbeitung von Konto-, Arbeitszeit-, Einstellungs- und Supportdaten."
   >
   <style>
     * { box-sizing: border-box; }
@@ -37,6 +37,7 @@
     }
     h1 { margin: 0 0 8px; font-size: 34px; letter-spacing: -0.4px; }
     h2 { margin-top: 34px; font-size: 22px; }
+    h3 { margin-top: 24px; font-size: 18px; }
     p, li { color: #555; font-size: 16px; }
     a { color: #168447; }
     .notice {
@@ -64,7 +65,7 @@
       <a class="back" href="./">← Zurück zum Support</a>
 
       <h1>Datenschutzerklärung</h1>
-      <p>Stand: 2. Oktober 2026</p>
+      <p>Stand: 9. Oktober 2026</p>
 
       <div class="notice">
         <strong>Verantwortlicher</strong><br>
@@ -83,65 +84,117 @@
       </p>
 
       <h2>2. Welche Daten verarbeitet werden</h2>
-      <p>Je nach Nutzung der App können insbesondere folgende Daten verarbeitet werden:</p>
+      <p>
+        Je nach Nutzung der App können insbesondere folgende Daten verarbeitet werden:
+      </p>
       <ul>
-        <li>Kontodaten, insbesondere E-Mail-Adresse und technische Angaben zur Anmeldung;</li>
-        <li>Arbeitszeitdaten, beispielsweise Datum, Arbeitsbeginn, Arbeitsende, Pausen und berechnete Arbeitszeiten;</li>
-        <li>von Ihnen hinterlegte Einstellungen, soweit diese für die Funktionen der App erforderlich sind;</li>
+        <li>Kontodaten, insbesondere E-Mail-Adresse sowie technische Angaben, die für Anmeldung und Session-Verwaltung erforderlich sind;</li>
+        <li>bei Nutzung des optionalen GitHub-Logins Daten, die für die Authentifizierung über GitHub erforderlich sind;</li>
+        <li>Arbeitszeitdaten, beispielsweise Datum, Arbeitsbeginn, Arbeitsende, Pausen, Arbeitsart und berechnete Arbeitszeiten;</li>
+        <li>Einstellungen wie Wochenstunden, Stundenlohn, Steuer-/Abzugsprozentsatz, Sprache, Darstellung, Benachrichtigungs- und Cloud-Synchronisierungseinstellungen;</li>
+        <li>freiwillig hinterlegte Angaben wie Mitarbeitername und Arbeitgeber-/Firmenname;</li>
         <li>Informationen, die Sie freiwillig an den Support übermitteln.</li>
       </ul>
 
-      <h2>3. Lokale Speicherung und Cloud-Funktionen</h2>
+      <h2>3. Lokale Speicherung</h2>
       <p>
-        Die App kann Daten lokal auf dem Gerät speichern, damit die Arbeitszeitfunktionen auch
-        ohne ständige Netzwerkverbindung genutzt werden können.
-      </p>
-      <p>
-        Wenn Sie Funktionen verwenden, die eine Anmeldung oder Cloud-Synchronisierung voraussetzen,
-        werden die dafür erforderlichen Daten an den dafür eingesetzten Cloud-Dienst übertragen.
-        Konten werden über einen Authentifizierungsdienst verwaltet; Arbeitszeiteinträge können einem
-        angemeldeten Benutzerkonto zugeordnet und in der Cloud gespeichert werden.
+        Die App speichert Arbeitszeitdaten und Einstellungen lokal auf dem Gerät, damit zentrale
+        Funktionen auch ohne ständige Netzwerkverbindung genutzt werden können. Hierfür wird die
+        lokale Gerätespeicherung verwendet.
       </p>
 
-      <h2>4. Zweck der Verarbeitung</h2>
+      <h2>4. Anmeldung und Cloud-Synchronisierung</h2>
+      <p>
+        Für Anmeldung, Kontoverwaltung und – sofern aktiviert und für die jeweilige Funktion
+        vorgesehen – Cloud-Synchronisierung verwendet die Arbeit-App Supabase. Supabase stellt
+        unter anderem Authentifizierung und eine gehostete Datenbank bereit.
+      </p>
+      <p>
+        Bei aktivierter Cloud-Synchronisierung können Arbeitszeiteinträge und die dafür vorgesehenen
+        Einstellungen dem angemeldeten Benutzerkonto zugeordnet und an Supabase übertragen werden.
+        Dazu gehören insbesondere Arbeitszeitdaten sowie die in Abschnitt 2 genannten
+        synchronisierbaren Einstellungen.
+      </p>
+      <p>
+        Supabase verarbeitet diese Daten im Auftrag des Verantwortlichen als technischer
+        Dienstleister/Verarbeiter. Supabase kann zur Bereitstellung seiner Dienste weitere
+        Unterauftragsverarbeiter einsetzen. Die Verarbeitung und mögliche internationale
+        Datenübermittlungen richten sich nach den jeweils geltenden Datenschutz- und
+        Auftragsverarbeitungsregelungen von Supabase.
+      </p>
+
+      <h2>5. OAuth-Anmeldung über GitHub</h2>
+      <p>
+        Die App bietet eine Anmeldung über GitHub an. Wenn Sie diese Funktion verwenden, wird
+        die Anmeldung über GitHub und Supabase abgewickelt. GitHub verarbeitet dabei die für die
+        OAuth-Anmeldung erforderlichen Daten nach den eigenen Datenschutzbestimmungen.
+      </p>
+
+      <h2>6. Benachrichtigungen</h2>
+      <p>
+        Die Arbeit-App kann lokale Benachrichtigungen für Arbeitsbeginn, Arbeitsende, Pausen,
+        Überstunden und andere App-Funktionen planen. Diese Benachrichtigungen werden auf dem
+        Gerät geplant. Die App fordert dafür die erforderliche Berechtigung des Betriebssystems an.
+        Eine Nutzung von Werbung oder einem eigenen Tracking-Dienst ist hierfür nicht vorgesehen.
+      </p>
+
+      <h2>7. Zwecke der Verarbeitung</h2>
       <p>Die Daten werden insbesondere verarbeitet, um:</p>
       <ul>
-        <li>Arbeitszeiten, Pausen, Sollstunden und Überstunden zu erfassen und zu berechnen;</li>
-        <li>die Anmeldung und Kontoverwaltung zu ermöglichen;</li>
-        <li>Cloud-Synchronisierung und Datensicherung bereitzustellen, sofern Sie diese Funktionen nutzen;</li>
+        <li>Arbeitszeiten, Pausen, Sollstunden, Überstunden und damit verbundene Auswertungen zu erfassen und zu berechnen;</li>
+        <li>die Anmeldung, Kontoverwaltung und optionalen GitHub-Login zu ermöglichen;</li>
+        <li>Cloud-Synchronisierung und Datensicherung bereitzustellen, sofern diese Funktionen genutzt werden;</li>
+        <li>PDF-/Exportfunktionen und sonstige vom Nutzer angeforderte App-Funktionen bereitzustellen;</li>
         <li>Supportanfragen zu bearbeiten und technische Probleme zu untersuchen.</li>
       </ul>
 
-      <h2>5. Weitergabe an Dienstleister</h2>
+      <h2>8. Rechtsgrundlagen</h2>
       <p>
-        Für Anmeldung und Cloud-Funktionen können technische Dienstleister eingesetzt werden.
-        Diese erhalten nur Daten, die für die jeweilige Funktion erforderlich sind. Die Arbeit-App
-        verkauft personenbezogene Daten nicht.
+        Die Verarbeitung erfolgt je nach Zweck und konkreter Nutzung insbesondere zur Erfüllung
+        oder Durchführung vorvertraglicher bzw. vertraglicher Leistungen (Art. 6 Abs. 1 lit. b
+        DSGVO), aufgrund berechtigter Interessen an einem sicheren und funktionsfähigen Dienst
+        (Art. 6 Abs. 1 lit. f DSGVO) oder – soweit eine Einwilligung erforderlich ist – auf
+        Grundlage von Art. 6 Abs. 1 lit. a DSGVO.
       </p>
 
-      <h2>6. Aufbewahrung und Löschung</h2>
+      <h2>9. Weitergabe an Dienstleister</h2>
       <p>
-        Daten werden nur so lange gespeichert, wie sie für die jeweiligen Zwecke erforderlich sind
-        oder gesetzliche Aufbewahrungspflichten bestehen. Wenn Sie die Löschung Ihres Kontos oder
-        Ihrer personenbezogenen Daten wünschen, wenden Sie sich bitte an
+        Personenbezogene Daten werden nur an technische Dienstleister übermittelt, soweit dies
+        für die jeweiligen Funktionen erforderlich ist. Dazu gehört insbesondere Supabase für
+        Authentifizierung und Cloud-Daten. Bei Nutzung des GitHub-Logins kann GitHub an der
+        Authentifizierung beteiligt sein. Die Arbeit-App verkauft personenbezogene Daten nicht.
+      </p>
+
+      <h2>10. Support-Webseite und Domain</h2>
+      <p>
+        Die Support-Webseite wird über GitHub Pages bereitgestellt. Beim Aufruf der Webseite
+        können technisch erforderliche Verbindungsdaten durch die beteiligten Infrastruktur- und
+        Hosting-Anbieter verarbeitet werden. Die Domain und DNS-Verwaltung erfolgt über one.com.
+        Die Webseite verwendet in dieser Version keine eigenen Werbe- oder Tracking-Skripte.
+      </p>
+
+      <h2>11. Aufbewahrung und Löschung</h2>
+      <p>
+        Daten werden nur so lange gespeichert, wie dies für die jeweiligen Zwecke erforderlich
+        ist oder gesetzliche Aufbewahrungspflichten bestehen. Die konkrete Speicherdauer kann
+        von der jeweiligen Funktion und davon abhängen, ob Daten lokal oder über Cloud-Funktionen
+        gespeichert werden.
+      </p>
+      <p>
+        Die Arbeit-App stellt eine Kontolöschfunktion bereit. Wenn die Löschung nicht direkt
+        über die App möglich ist oder Sie Fragen zur Löschung haben, wenden Sie sich bitte an
         <a href="mailto:support@arbeit-app.de">support@arbeit-app.de</a>.
       </p>
 
-      <h2>7. Ihre Rechte</h2>
+      <h2>12. Ihre Rechte</h2>
       <p>
         Im Rahmen der gesetzlichen Voraussetzungen haben Sie insbesondere das Recht auf Auskunft,
         Berichtigung, Löschung, Einschränkung der Verarbeitung und Datenübertragbarkeit sowie das
         Recht, einer Verarbeitung zu widersprechen oder eine erteilte Einwilligung zu widerrufen.
+        Außerdem besteht ein Beschwerderecht bei einer zuständigen Datenschutzaufsichtsbehörde.
       </p>
 
-      <h2>8. Support-Webseite</h2>
-      <p>
-        Beim Aufruf der Support-Webseite können technisch erforderliche Verbindungsdaten durch den
-        Hosting-Anbieter verarbeitet werden. Die Webseite verwendet in dieser Version keine eigenen
-        Werbe- oder Tracking-Skripte.
-      </p>
-
-      <h2>9. Kontakt</h2>
+      <h2>13. Kontakt</h2>
       <p>
         Fragen zum Datenschutz oder Anträge zur Ausübung Ihrer Rechte richten Sie bitte an:
       </p>
@@ -153,7 +206,7 @@
         <a href="mailto:support@arbeit-app.de">support@arbeit-app.de</a>
       </p>
 
-      <h2>10. Änderungen dieser Datenschutzerklärung</h2>
+      <h2>14. Änderungen dieser Datenschutzerklärung</h2>
       <p>
         Diese Datenschutzerklärung kann angepasst werden, wenn sich die Funktionen der App,
         eingesetzte Dienstleister oder rechtliche Anforderungen ändern. Die jeweils aktuelle
